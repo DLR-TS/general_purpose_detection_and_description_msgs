@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>general_purpose_detection_and_description_msgs</name>
+  <version>1.0.0</version>
+  <description>
+    General Purpose Object Detection and Description Messages for ROS2.
+    Minimal schema for ROS2-based object and traffic sign detection with sensor fusion support.
+    Designed for autonomous driving perception pipelines compatible with the DLR ADORe framework.
+    Compatible with ASAM OSI DetectedObject + TrafficSign semantics while remaining ROS2-native.
+  </description>
+  
+  <maintainer email="opensource-ts@dlr.de">DLR-TS</maintainer>
+  <license>Apache-2.0</license>
+  
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>rosidl_default_generators</buildtool_depend>
+  
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  
+  <exec_depend>rosidl_default_runtime</exec_depend>
+  
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
